@@ -1,0 +1,45 @@
+html,
+body,
+#GoogleMap {
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+ }
+
+#select_form {
+	width: 23%;
+	/* height: 30%; */
+	position: absolute;
+	top: 1%;
+	right: 1%;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 2%;
+}
+
+#dropdown {
+	width: 40%;
+	height: 20%;
+	margin-left: 10%;
+}
+
+#buttons {
+	display: inline-block;
+	margin-left: 5%;
+	position: relative;
+	text-align: center;
+
+}
+
+#label_keyword {
+	font-size:115%;
+	white-space: nowrap;
+	margin-left: 10%;
+}
+
+#label_distance {
+	font-size:115%;
+	white-space: nowrap;
+	margin-left: 10%;
+}
+
+

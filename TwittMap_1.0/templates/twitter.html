@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <!-- adding jQuery.js -->
+	</head>
+	<body>
+
+		<!--Google Map-->
+		<div id = "GoogleMap"></div>
+		
+
+		<!--Select Keyword-->
+		<form class="form-horizontal" id="select_form">
+			<h4><b>Search Tweet</b></h4>
+			<div id = "test">{{ test }}</div>
+			<div calss = "form-group">
+				<label id="label_keyword" class="col-sm-2 control-label">Keyword:</label>
+			<!--dropdown select according to keyword-->
+				<div class="col-sm-10" id="dropdown">
+					<select class="form-control" id = "keyword_select" name="keyword_select">
+						<option selected >Oscar</option>
+						<option >Amazon</option>
+						<option >Health</option>
+						<option >Clothes</option>
+						<option >Cloud</option>
+						<option >Restaurant</option>
+						<option >Trump</option>
+						<option >Love</option>
+						<option >Food</option>
+						<option >Movie</option>
+					</select>
+			<!--end of keyword select part-->
+				</div>
+				<div calss = "form-group">
+				<!--dropdown select accroding to distance-->
+				<label id="label_distance" class="col-sm-2 control-label">Distance:</label>
+			<!--dropdown select according to keyword-->
+					<div class="col-sm-10" id="dropdown">
+					<select class="form-control" id = "distance_select" name="distance_select">
+						<option selected >100</option>
+						<option >300</option>
+						<option >500</option>
+						<option >800</option>
+						<option >1000</option>
+						<option >3000</option>
+						<option >5000</option>
+					</select>
+						</div>
+				<div class = "col-sm-10 col-sm-offset-2" id = "buttons">
+					<button id ="search" type="button" class="btn btn-primary">Search by Keyword</button>
+					<button  id = "search_distance" type="button" class="btn btn-default">Search by Distance</button>
+				</div>
+				</div>
+				<!--end of button group-->
+            </div>
+		</form>
+		<script src="../static/js/tweetJS.js"></script>
+		<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdrSyHI44lDrKk7Sgw_isUn3otVV9QmAE&callback=initMap">
+    </script>
+	</body>
+	</html>

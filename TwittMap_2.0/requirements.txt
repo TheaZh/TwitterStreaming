@@ -1,0 +1,5 @@
+boto3==1.4.4
+elasticsearch==5.2.0
+Flask==0.11.1
+tweepy==3.5.0
+watson_developer_cloud==0.25.2
